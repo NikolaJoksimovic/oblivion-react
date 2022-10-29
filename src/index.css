@@ -1,7 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shalimar&display=swap");
 :root {
+  --clr-pirmary: hsl(0, 0%, 23%);
+  --clr-secondary: hsl(214, 23%, 18%);
+  --clr-accent: hsl(44, 62%, 24%);
+  --clr-text-pirmary: white;
+  --clr-text-secondary: black;
+
+  --font-primary: "Roboto", sans-serif;
+  --font-poetic: "Shalimar", cursive;
+
+  --transition025: all 0.25s linear;
 }
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+body {
+  font-family: var(--font-primary);
+}
+h3 {
+  font-size: 1.4em;
+}
+
+/* NAVBAR */
+.navbar-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  background-color: var(--clr-pirmary);
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 1em 0.5em 1em 0.5em;
+}
+.nav-logo {
+  text-transform: capitalize;
+
+  font-family: var(--font-poetic);
+  color: var(--clr-text-pirmary);
+  letter-spacing: 0.2em;
+  font-size: 1.3em;
+}
+.nav-links {
+  display: none;
+}
+.nav-icon {
+  display: flex;
+  align-items: center;
+
+  font-size: 1.5em;
+  padding: 0.2em;
+}
+.icon-bars {
+  display: flex;
+  flex-direction: column;
+
+  width: 1.4em;
+}
+.icon-bars:hover {
+  cursor: pointer;
+}
+.bar {
+  background-color: var(--clr-text-pirmary);
+
+  width: 100%;
+  height: 0.2em;
+  border-radius: 0.5em;
+  margin: 0.09em 0 0.09em 0;
 }
