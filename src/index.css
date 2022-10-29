@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shalimar&display=swap");
 :root {
-  --clr-pirmary: hsl(0, 0%, 23%);
+  --clr-pirmary: hsl(0, 0%, 13%);
+  --clr-pirmary2: hsl(0, 0%, 23%);
   --clr-secondary: hsl(214, 23%, 18%);
   --clr-accent: hsl(44, 62%, 24%);
   --clr-text-pirmary: white;
@@ -77,8 +78,6 @@ h3 {
   margin: 0.09em 0 0.09em 0;
 }
 .navbar-drop-menu {
-  border-top: 0.1em solid var(--clr-text-pirmary);
-  height: 100vh;
-
+  background-color: var(--clr-pirmary2);
   transition: var(--transition02);
 }
